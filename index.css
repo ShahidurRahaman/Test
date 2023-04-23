@@ -23,13 +23,6 @@
     background: rgb(68,188,216);
     background: radial-gradient(circle, rgba(68,188,216,0.4) 0%, rgba(255,255,255,1) 100%);
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
-    @media (max-width: 900px) {
-        flex-direction: column;
-    }
-    @media (max-width: 900px) {
-        margin: 5px;
-    }
-
 }
 
 #carouselExampleSlidesOnly{
@@ -37,9 +30,6 @@
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
     width: 100%;
     border-radius: 10px;
-    @media (max-width: 900px) {
-        margin: 5px 0px 5px 0px;
-    }
 }
 
 .radius-5 {
@@ -49,12 +39,6 @@
 #carousel-side-text{
     margin: 5px;
     width: 100%;
-    @media (max-width: 900px) {
-        text-align: center;
-    }
-    @media (max-width: 900px) {
-        margin: 5px 0px 5px 0px;
-    }
 }
 
 #carousel-side-text h3{
@@ -64,12 +48,6 @@
 }
 #carousel-side-text p{
     font-size: larger;
-    @media (max-width: 1154px) {
-        font-size: 80%;
-    }
-    @media (max-width: 900px) {
-        font-size: 100%;
-    }
 }
 
 #main-bottom{
@@ -90,10 +68,6 @@
     background: rgb(68,188,216);
     background: radial-gradient(circle, rgba(68,188,216,0.4) 0%, rgba(255,255,255,1) 100%);
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
-
-    @media (max-width: 900px) {
-        flex-direction: column;
-    }
 }
 .card{
     margin:5px;
@@ -120,4 +94,31 @@
 
 .copyright{
     background-color: #44bcd8
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 900px) {
+    #main-top{
+        flex-direction: column;
+        margin: 5px;
+    }
+    #carouselExampleSlidesOnly{
+        margin: 5px 0px 5px 0px;
+    }
+    #carousel-side-text{
+        text-align: center;
+        margin: 5px 0px 5px 0px;
+    }
+    #carousel-side-text p{
+        font-size: 100%;
+    }
+    .card-box{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1154px) {
+    #carousel-side-text p{
+        font-size: 80%;
+    }
 }
